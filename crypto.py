@@ -1,6 +1,8 @@
 import math
 import sympy
 
+# Functions for MATH360
+
 def trial_factor(n):
     print("Testing values from 2 to", math.floor(math.sqrt(n)))
     print("Factors of", n, ":")
