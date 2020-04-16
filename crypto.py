@@ -86,3 +86,10 @@ def phi(n):
     tot = sympy.totient(n)
     print("phi(", n, ") =", tot)
     return tot
+    
+def discrete_log(a, g, p): # a = g^x mod p
+	for x in range(0, p, 1):
+		if(pow(g, x, p) == a):
+			print("x=", x)
+			return x
+	print("No x found...")
